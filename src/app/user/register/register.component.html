@@ -1,0 +1,46 @@
+
+
+<div class='container'>
+    <div class="rootView">
+<div class='col-12 col-md-6'>
+    <form #signUpForm="ngForm" (ngSubmit)="signUp()">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>Firstname</label>
+                    <input class="form-control" type="text" [(ngModel)]="newFirstname" name="newFirstname"
+                        #firstname="ngModel" placeholder="Enter firstname" required>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label>Lastname</label>
+                    <input class="form-control" type="text" [(ngModel)]="newLastname" name="newLastname"
+                        #lastname="ngModel" placeholder="Enter lastname" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group passwordView">
+            <label>Email</label>
+            <input type="email" class="form-control" name="newEmail" [(ngModel)]="newEmail" #email="ngModel"
+               placeholder="Enter email" required>
+        </div>
+        <div class="form-group passwordView">
+            <label>Password</label>
+            <input type='password' class="form-control" name="newPassword" [(ngModel)]="newPassword"
+                #password='ngModel' placeholder='Enter password' required>
+        </div>
+        <div class="form-group passwordView">
+            <label>Mobile Number</label>
+            <input type='text' class="form-control" name="newMobileNo" [(ngModel)]="newMobileNo"
+                #mobileno="ngModel" placeholder='Enter mobile number' required>
+        </div>
+    
+
+        <button type="submit" class="btn btn-success button col-md-12">REGISTER</button>
+    </form>
+</div>
+<p class="register">Already a member? <a class="registerText" type="submit" (click)="goToSignin()">Login</a></p>
+
+</div>
+</div>

@@ -1,0 +1,16 @@
+
+
+  <nav class="navbar navbar-light bg-light customNav">
+    <span class="navbar-brand mb-0 h1">Users</span>
+    <button type="submit" class="btn btn-primary" (click)="logOut()">Logout</button>
+  </nav>
+ 
+<div class='container'>
+    <div class="rootView">
+<div class='col-12 col-md-6'>
+    <ul class="list-group" *ngFor="let user of usersArray">
+        <li class="list-group-item">{{user.first_name}} {{user.last_name}}</li>
+      </ul>
+</div>
+</div>
+</div>

@@ -1,0 +1,27 @@
+
+ 
+<div class='container'>
+    <div class="rootView">
+    <!-- <h3>Login</h3> -->
+<div class='col-12 col-md-6'>
+    <form #signUpForm="ngForm" (ngSubmit)="login()" >
+            
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email"  placeholder='Enter email' class="form-control" name="newEmail" [(ngModel)]="newEmail" #email="ngModel"
+                required>
+        </div>
+        <div class="form-group passwordView">
+            <label>Password</label>
+            <input type='password' class="form-control" name="newPassword" [(ngModel)]="newPassword"
+                #password='ngModel' placeholder='Enter password' required>
+        </div>
+        
+
+        <button type="submit" class="btn btn-success button col-md-12" >SIGN IN</button>
+        <!-- <button type="submit" class="btn btn-primary " (click)="goToSignup()">Sign-up</button> -->
+    </form>
+</div>
+<p class="register">Not a member? <a class="registerText" type="submit" (click)="goToSignup()">Register</a></p>
+</div>
+</div>
