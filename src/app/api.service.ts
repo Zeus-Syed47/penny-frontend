@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-  private url = 'http://localhost:3000';
+  private url = 'https://test-penny-backend-977383227665.us-central1.run.app/';
   constructor(public http: HttpClient) {}
 
   public signupFunction(data: any): Observable<any> {
